@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JA UPGRADE</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./imagenes/Recurso 6.png" sizes="32x32">
+</head>
+<body>
+    
+    <div class="fondo"></div>
+    <header class="header" >
+        <nav class="header_nav">
+            <img class="header_imagen" src="./imagenes/menu fijo.png" alt="">
+            
+            <ul class="header_ul">
+                <li class=" header_ul_li"><a href="#portafolio">PORTAFOLIO</a></li>
+                <li class=" header_ul_li"><a href="#contacto">CONTACTO</a></li>
+                <li class=" header_ul_li"><a href="#perfil">PERFIL</a></li>
+
+            </ul> 
+        </nav>
+    </header>
+    <main class="main">
+        <section id="portafolio">
+            <img class="main_imagenes" src="./imagenes/DIVICION.png" alt="">
+            <p class="parrafo_main">PORTAFOLIO</p>
+            <ul class="main_ul " id="myBtnContainer">
+                <li class=" main_ul_li btn active" id="uno" onclick="filterSelection('uno')"><p>ILUSTACIÓN</p></li>
+                <li class=" main_ul_1 btn" id="dos"  onclick="filterSelection('dos')"><p>FOTOGRAFIA</p></li>
+                <li class=" main_ul_ btn" id="tres"  onclick="filterSelection('tres')"><p>DISEÑO EDITORIAL</p></li>
+            </ul> 
+            <div class="portafolio_ilustracion column uno" >
+                    <figure >
+                        <img src="imagenes/AMUMU INFERNAL fondo 1.jpg" onclick="myFunction(this);" > 
+                        <figcaption>AMUMU <br> INFERNAL</figcaption>
+                    </figure>
+                    <figure >
+                        <img src="imagenes/BIG SMOKE FONDO.jpg" onclick="myFunction(this);"> 
+                        <figcaption>THE BIG <br> SMOKE</figcaption>
+                    </figure >                
+                    <figure >
+                        <img src="imagenes/MANO SPRAY fondo.jpg" onclick="myFunction(this);"> 
+                        <figcaption>SPRAY <br> HAND</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/TNT CIPO FONDO.jpg" onclick="myFunction(this);"> 
+                        <figcaption>BANG <br> HAND</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/BLOW fondo.jpg" onclick="myFunction(this);" > 
+                        <figcaption>GRANEO <br> PIRATA</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/heimerdinger fondo.jpg" onclick="myFunction(this);"> 
+                        <figcaption>TOXIC <br> HEIMER</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/SOUL FONDO.jpg" onclick="myFunction(this);"> 
+                        <figcaption>HEARDT <br> AND SOUL</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/CAJETILLA NEA FONDO.jpg" onclick="myFunction(this);"> 
+                        <figcaption>GO TO <br> SMOKE</figcaption>
+                    </figure>
+                </div>
+                <!-- The expanding image container -->
+                <div class="container">
+                    <!-- Close the image -->
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg" >
+                    
+                    <span id="cerrar" class="closebtn">&times;</span>
+
+                </div>
+                <div class="portafolio_fotogragia column dos">
+                    <figure>
+                        <img src="imagenes/cerveza instagram.jpg" onclick="grande('imagenes/cerveza instagram.jpg')" > 
+                        <figcaption>HEINEKEN</figcaption>
+                    </figure>
+                    <figure >
+                        <img src="imagenes/jordar R 4 Tupac.jpg" onclick="grande('imagenes/jordar R 4 Tupac.jpg')"> 
+                        <figcaption>JORDAN RETRO 4 TUPAC</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/WhatsApp Image 2021-11-08 at 10.56.33 PM.jpeg" onclick="grande('imagenes/WhatsApp Image 2021-11-08 at 10.56.33 PM.jpeg')" > 
+                        <figcaption>FOTOGRAFO</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/rolex.png" onclick="grande('imagenes/rolex.png')"> 
+                        <figcaption>ROLEX</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/lucky j.jpg" onclick="grande('imagenes/lucky j.jpg')"> 
+                        <figcaption>LUCKY</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/cervezas retoque.jpg" onclick="grande('imagenes/cervezas retoque.jpg')"> 
+                        <figcaption>CERVEZA</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/dfhdh.jpeg" onclick="grande('imagenes/dfhdh.jpeg')"> 
+                        <figcaption>CIPO ENCENDIDO</figcaption>
+                    </figure>                
+                    <figure >
+                        <img src="imagenes/joyeria.png" onclick="grande('imagenes/joyeria.png')"> 
+                        <figcaption>JOYERIA</figcaption>
+                    </figure>             
+                    <figure >
+                        <img src="imagenes/WhatsApp Image 2021-11-09 at 3.48.57 AM.jpeg" onclick="grande('imagenes/WhatsApp Image 2021-11-09 at 3.48.57 AM.jpeg')"> 
+                        <figcaption>LLANURA</figcaption>
+                    </figure>
+                </div>  
+                            <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img  id="cambiar" class="modal-content" src="" alt="">
+                
+                </div>
+
+                <div class="portafolio_diseño column tres">
+                    <figure style="background-image: url(./imagenes/FONDO\ STREET\ ART.jpg);  background-size: 100% 100%;" >
+                        <img src="imagenes/01 PORTADA.jpg" alt="Imagen de girasol"> 
+                        <figcaption style="padding: 2% 0%;">REVISTA:  <br> <p style="color: black;"> STREET ART <br> ¿ARTE O BANDALISMO? </p></figcaption>
+                    </figure>
+                    <figure style="background-image: url(./imagenes/FONDO\ MAX.jpg);  background-size: 100% 100%;" >
+                        <img src="imagenes/MAX.jpg" alt="Imagen de girasol"> 
+                        <figcaption style="padding: 2% 0%;">REVISTA: <br"> <p style="color: black;"> MAX MIEDINGER <br> HELVETICA </p> </figcaption>
+                    </figure >                
+                    <figure style="background-image: url(./imagenes/FONDO\ EL\ ARTISTA.jpg);  background-size: 100% 100%;">
+                        <img src="imagenes/EL ARTISTA.jpg" alt="Imagen de girasol"> 
+                        <figcaption style="padding: 5% 0%;">PERIODICO: <br><p style="color: black;" > EL ARTISTA</p></figcaption>
+                    </figure>    
+                </div>        
+            
+        </section>
+        <section id="contacto">
+            <p class="parrafo_main">CONTACTO</p>
+            <div class="contacto_imagenes">
+                <figure class="contacto_superior">
+                    <div>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <figcaption>CORREO:</figcaption><!--Agregar una descricpcion a las imagenes-->
+                </figure>
+                <figure class="contacto_superior">
+                    <div>
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <figcaption>INSTAGRAM:</figcaption><!--Agregar una descricpcion a las imagenes-->
+                </figure>                
+                <figure class="contacto_superior">
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <figcaption>WHATSAPP:</figcaption><!--Agregar una descricpcion a las imagenes-->
+                </figure> 
+                <figure class="contacto_inferior">
+                    <figcaption>jagrafico1@gmail.com</figcaption><!--Agregar una descricpcion a las imagenes-->
+                    <img src="imagenes/GRIS-0.png" style="width: 85%;height: 85%;margin-top: 25%;
+                    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);" alt="Imagen de girasol">
+                </figure>              
+                <figure class="contacto_inferior">
+                    <figcaption>@ja_upgrade</figcaption><!--Agregar una descricpcion a las imagenes-->
+                    <img src="imagenes/QR INSTAGRAM.jpg" alt="Imagen de girasol">
+                </figure>           
+                <figure class="contacto_inferior">
+                    <figcaption>+57 322 462 3323</figcaption><!--Agregar una descricpcion a las imagenes-->
+                    <img src="imagenes/QR WAPP.jpeg" alt="Imagen de girasol">
+                </figure>
+            </div>
+            <div class="contacto_logos">
+                <img src="imagenes/t blanca.jpg" alt="">
+                <img src="imagenes/t negra.jpg" alt="">
+            </div>
+        </section>
+        <section id="perfil">
+            <p class="parrafo_main">PERFIL</p>
+            <figure class="perfil_fotografia">
+                <img src="imagenes/FOFOFOFO.jpeg" alt="">
+                <figcaption>JHONATAN AVILA BUSTOS</figcaption><!--Agregar una descricpcion a las imagenes-->
+            </figure> 
+            <div class="perfil_contenido">
+                <div class="perfil_contenido_cuadros" >
+                    <div class="cuadro_superioir"></div>
+                    <div class="cuadro_inferior"></div>
+                </div>
+                <div style="border-right: 5px solid black; height: 60vh;margin-top: 8%;"></div>
+                <div class="perfil_contenido_cuadros">
+                    <div class="cuadro_superioir"></div>
+                    <div class="cuadro_inferior"></div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        /*imagen grande*/
+            // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var captionText = document.getElementById("caption");
+
+        function grande(a){
+            document.getElementById("cambiar").src=a;
+                        console.log(a);
+                        console.log("hola");
+                        
+        modal.style.display = "block";
+
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+
+        /* cambio de galeria */
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                console.log(x);
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                console.log(x[i]);
+
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+            
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+            }
+            
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                    }
+            }
+            element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+            }
+            let uno= document.getElementById("uno");
+            let dos= document.getElementById("dos");
+            let tres= document.getElementById("tres");
+            let portafolio = document.getElementById("portafolio");
+            uno.addEventListener("click",function(e){
+            e.preventDefault();
+            portafolio.style.height="90vh";
+            })
+            dos.addEventListener("click",function(e){
+            e.preventDefault();
+            portafolio.style.height="180vh";
+            })
+            tres.addEventListener("click",function(e){
+            e.preventDefault();
+            portafolio.style.height="210vh";
+            })
+            /*imagenes en recuadro*/
+            function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            var c = document.getElementById("contacto");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+            c.style.marginTop= "40%";
+            }
+            var ce = document.getElementById("cerrar");
+            ce.addEventListener("click", function(){
+                ce.parentElement.style.display="none";
+                var c = document.getElementById("contacto");
+                c.style.marginTop= "0%";
+                });
+            
+
+            </script>
+    </main>
+
+</body>
+</html>

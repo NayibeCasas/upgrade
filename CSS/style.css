@@ -1,0 +1,508 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10vh;
+
+}
+.fondo{
+    background: black;  /* fallback for old browsers */
+    
+    height: 110vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+
+}
+.header{
+    width: 100%;
+    height: 40vh;
+
+}
+
+.header_imagen{
+    width: 65%;
+    height:40vh;
+    align-items: center;
+}
+
+.header_nav{
+    text-align: center;
+    width: 100%;
+    height:10vh;
+    position: fixed;
+}
+.header_ul{
+    list-style: none;/*estilo de la lista para quitar los punos*/
+    margin-left: 50%;
+    margin-top: -7%;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_ul_li{
+    display: inline-block;/*poner los elementos de forma horizontal*/
+    width: 30%;
+    height: 100%;
+    background-color:  #2c3c6c ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*ser especifco en css*/
+.header_ul_li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+
+}
+.header_ul_li:hover{
+    background-color:#1c809c  ;
+}
+
+.main{
+    width: 100%;
+    text-align: center;
+}
+#portafolio{
+    height:55vh ;
+}
+.portafolio_ilustracion{
+    width: 65%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 17.5%;
+    margin-top: 2%;
+}
+
+.portafolio_ilustracion figure{
+    width: 25%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portafolio_ilustracion img{
+    width: 30%;
+    height: 70%;
+    box-shadow: 5px 5px 6px 0 rgba(0, 0, 0,.7);
+    cursor: pointer;
+}
+.portafolio_ilustracion figcaption{
+    width: 55%;
+    height: 70%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    color: white ;
+    text-align: justify;
+    background-color: #a4a4a4;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10%;
+}
+.portafolio_fotogragia{
+    width: 55%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -25vh;
+    margin-left: 22.5%;
+    margin-bottom: 10%;
+}
+.portafolio_fotogragia figure{
+    width: 33.3%;
+    height: 33.3%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.portafolio_fotogragia img{
+    width: 80%;
+    height: 80%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+}
+.portafolio_fotogragia figcaption{
+    margin-top: 5%;
+    width: 80%;
+    height: 15%;
+    margin-left: 12%;
+    background-color:  #2c3c6c ;
+    box-shadow: 5px 5px 6px 0 rgba(0, 0, 0,.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portafolio_diseño{
+    width: 65%;
+    height: 120vh;
+    margin-top: -120vh;
+    margin-left: 17.5%;
+}
+.portafolio_diseño figure{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.portafolio_diseño img{
+    margin-right: 10%;
+    width: 25%;
+    height: 70%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+
+}
+.portafolio_diseño figcaption{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    width: 45%;
+    align-items: center;
+    
+    background-color: #446cac  ;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+    height: 60%;
+}
+.main_imagenes{
+    width: 55%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+}
+
+.parrafo_main{
+    width: 12%;
+    height: 40px;
+    margin-left: 45%;
+    background-color:  #2c3c6c ;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.main_ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style: none;/*estilo de la lista para quitar los punos*/
+    width: 55%;
+    height: 10%;
+    margin-left: 22.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.main_ul_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 35px;
+    margin-right: 2%;
+    cursor: pointer;
+
+}
+.main_ul p{
+    color: white;
+    background-color: rgba(19,155,216);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+.btn.active {
+}
+.main_ul_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 35px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    cursor: pointer;
+}
+
+.main_ul_{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.main_ul_li p:hover,.main_ul_1 p:hover,.main_ul_ p:hover{
+    background-color:#1c809c  ;
+}
+.main_ul_li p:focus,.main_ul_1 p:focus,.main_ul_ p:focus{
+    background-color:#1c809c  ;
+}
+#contacto{
+    height: 150vh;
+    margin-top: 10%;
+}
+.contacto_imagenes{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 65%;
+    height: 90vh;
+    margin-left: 19.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.contacto_imagenes figure{
+    width: 28%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+    font-size: 20px;
+}
+.contacto_superior{
+text-align: center;
+
+}
+.contacto_superior div{
+    margin-left: 22%;
+    height:150px;
+    width:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-border-radius:100px;
+    -webkit-border-radius:100px;
+    border-radius:100px;
+    margin-bottom: 20%;
+    font-size: 90px;
+    color: white;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+    background:  #64267c ;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,rgb(100,38,124),rgba(55,57,176,.8), rgba(19,155,216));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,rgb(100,38,124),rgba(55,57,176,.8), rgba(19,155,216)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contacto_superior figcaption{
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.contacto_inferior img{
+    width: 80%;
+    height: 80%;
+    margin-top: 25%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+}
+.contacto_inferior figcaption{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:   #404c9c  ;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+
+}
+.contacto_logos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.contacto_logos img{
+    width: 45%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+}
+#perfil{
+    height: 90vh;
+    margin-top: 5%;
+}
+.perfil_fotografia img{
+    margin-top: 4%;
+    margin-left:37%;
+    width:27%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    border-radius:100%;
+    margin-bottom: 5%;
+    font-size: 90px;
+    color: white;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+
+}
+.perfil_fotografia figcaption{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:   #404c9c  ;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+.perfil_contenido{
+    width: 65%;
+    margin-left: 17.5%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfil_contenido_cuadros{
+    width: 45%;
+    height: 80%;
+}
+.cuadro_superioir{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5%;
+    background-color:  #a4a4a4;
+}
+.cuadro_inferior{
+    height: 85%;
+    width: 100%;
+    background-color:  #a4a4a4;
+}
+/**/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+}
+
+  /* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+  /* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+    width: 100%;
+    }
+}
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    display: none;
+    height: 70vh;
+    margin-bottom: 15%;
+}
+.container img{
+    width: 40%;
+    height: 100%;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0,.7);
+}
+
+  /* Closable button inside the image */
+.closebtn {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    width: 5%;
+    text-align: right;
+    margin-left: 73%;
+    margin-top: -36%;
+}
